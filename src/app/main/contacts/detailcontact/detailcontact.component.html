@@ -1,0 +1,35 @@
+<div class="dialog-content-wrapper">
+   <mat-toolbar style="background-color: rgb(255, 195, 76) " class=" m-0">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+        <span class="title dialog-title">{{contacts?.objet}}</span>
+        <button mat-icon-button (click)="onClose()" aria-label="Close dialog">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-toolbar-row>
+
+</mat-toolbar>
+ 
+   <div fxLayout="column" class="p-16 pb-0 m-0 event-form w-100-p" fusePerfectScrollbar>
+ 
+    <div fxLayout="row" id="border">
+
+        <div class="h2" fxFlex="50" fxLayoutAlign="start">{{contacts?.nom}}</div>
+        <div class="h5" fxFlex="50" fxLayoutAlign="end end">{{contacts?.date |  date:'yyyy-MM-dd' }}</div>
+  
+    </div>
+
+    <br>
+    <div class="h2">
+            <span>{{contacts?.email}}</span>    
+    </div>
+      <br>
+      <mat-form-field appearance="outline">
+          <mat-label>Message</mat-label>
+          <textarea matInput value="{{contacts?.message}}"
+                    rows="4" disabled>
+          </textarea>
+      </mat-form-field>
+   </div>
+ 
+ </div>
+ 

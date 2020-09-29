@@ -1,0 +1,179 @@
+<div id="order" class="page-layout carded fullwidth inner-scroll">
+
+    <!-- TOP BACKGROUND -->
+    <div class="top-bg amber"></div>
+    <!-- / TOP BACKGROUND -->
+  
+    <div class="center">
+  
+        <!-- HEADER -->
+        <div class="header amber"
+             fxLayout="row" fxLayoutAlign="space-between center">
+  
+            <!-- APP TITLE -->
+            <div fxLayout="row" fxLayoutAlign="start center">
+  
+                <button mat-icon-button class="mr-16" [routerLink]="'/dashbord'">
+                    <mat-icon>arrow_back</mat-icon>
+                </button>
+  
+                <div fxLayout="column" fxLayoutAlign="start start"
+                     [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                    <div class="h1">
+                        Update
+                    </div> 
+                </div>
+           </div>
+           <div fxLayout="column" fxLayoutAlign="end end"
+           [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+          <div class="h1">
+       
+      
+      <button mat-raised-button class="add-product-button fuse-white mt-24 mt-md-0"  (click)="update()">
+        <span>Save </span>
+      </button>
+          </div> 
+            </div>
+            <!-- / APP TITLE -->
+        </div>
+        <!-- / HEADER -->
+  
+      <div class="content-card">
+   
+            <div class="contentb">                               
+                      <div class="tab-contentb p-24" fusePerfectScrollbar>
+                             
+                          <form  [formGroup]="form">
+    
+                                    
+                                  <div fxLayout="column" fxLayoutGap="10px">
+                                      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px"  fxFlex="100">
+
+                                                <mat-form-field appearance="outline" fxFlex="50">
+                                                    <mat-label>Name</mat-label>
+                                                    <input  formControlName="name" [(ngModel)]="detail.name" name="detail.name" matInput  required > 
+                                                    <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                                  </mat-form-field> 
+                                                
+
+                                                    <mat-form-field appearance="outline" fxFlex="50">
+                                                        <mat-label>Generic_name</mat-label>
+                                                        <input formControlName="generic_name"  name="detail.generic_name"[(ngModel)]="detail.generic_name" matInput  required  > 
+                                                        <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                                      </mat-form-field> 
+                    
+                                      </div>
+                                     <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40">  
+
+
+                                                    <mat-form-field appearance="outline" fxFlex="50">
+                                                        <mat-label>description</mat-label>
+                                                        <input  formControlName="description" name="detail.description" [(ngModel)]="detail.description"  matInput  required  > 
+                                                        <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                                      </mat-form-field> 
+                                                  
+                                                    
+                                                    <mat-form-field appearance="outline" fxFlex="50">
+                                                        <mat-label>Nationality</mat-label>
+                                                        <input  formControlName="nationality" name="detail.nationality"  [(ngModel)]="detail.nationality"  matInput  required  > 
+                                                        <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                                      </mat-form-field> 
+                                                         
+                                  </div> 
+                                                  
+                                              
+                   
+                                      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                            <mat-form-field appearance="outline" fxFlex="50">
+                                                <mat-label>parity</mat-label>
+                                                <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.parity" matInput  required  > 
+                                                <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                              </mat-form-field> 
+
+
+                                            <mat-form-field appearance="outline" fxFlex="50">
+                                                <mat-label>round_decimal</mat-label>
+                                                <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.round_decimal" matInput  required  > 
+                                                <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                              </mat-form-field> 
+  
+                                           
+                                      </div>  
+                                        
+                                      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                            <mat-form-field appearance="outline" fxFlex="50">
+                                                <mat-label>sgp_desc</mat-label>
+                                                <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.sgp_desc" matInput  required  > 
+                                                <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                              </mat-form-field>
+
+                                            <mat-form-field appearance="outline" fxFlex="50">
+                                                <mat-label>Unit</mat-label>
+                                                <input [ngModelOptions]="{standalone: true}"  [(ngModel)]="detail.unit"  matInput  required  > 
+                                                <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                              </mat-form-field> 
+                                      </div>  
+
+                                      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                          <mat-form-field appearance="outline" fxFlex="50">
+                                              <mat-label>Currency_aum</mat-label>
+                                              <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.currency_aum"  matInput  required  > 
+                                              <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                            </mat-form-field> 
+
+                                          <mat-form-field appearance="outline" fxFlex="50">
+                                              <mat-label>creation_year</mat-label>
+                                              <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.creation_year" matInput  required  > 
+                                              <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                            </mat-form-field> 
+                                           
+                                          
+                                    </div>  
+                                    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                        <mat-form-field appearance="outline" fxFlex="50">
+                                            <mat-label>Aum_source</mat-label>
+                                            <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.aum_source"  matInput  required  > 
+                                            <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                          </mat-form-field> 
+
+                                        <mat-form-field appearance="outline" fxFlex="50">
+                                            <mat-label>aum_cons_eur</mat-label>
+                                            <input  [ngModelOptions]="{standalone: true}"  [(ngModel)]="detail.aum_cons_eur" matInput  required  > 
+                                            <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                          </mat-form-field> 
+                                         
+                                        
+                                  </div>  
+                                  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+
+                                      <mat-form-field appearance="outline" fxFlex="50">
+                                          <mat-label>Aum_cd</mat-label>
+                                          <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.aum_cd" matInput  required  > 
+                                          <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                        </mat-form-field> 
+
+                                        <mat-form-field appearance="outline" fxFlex="50">
+                                            <mat-label>Alt_names</mat-label>
+                                            <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="detail.alt_names" matInput  required  > 
+                                            <mat-icon matSuffix matTooltip="Info about the action"  class="secondary-text">info</mat-icon> 
+                                          </mat-form-field> 
+                                     
+                                      
+                                </div>  
+                                  </div>  
+                           
+       
+                          </form>
+  
+   
+                      </div>
+  
+                    
+  
+            </div>
+  
+        </div> 
+  
+    </div>
+  </div>
+  

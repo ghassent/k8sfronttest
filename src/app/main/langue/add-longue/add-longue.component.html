@@ -1,0 +1,510 @@
+<div id="forms" class="page-layout simple fullwidth" fxLayout="column">
+
+        <mat-horizontal-stepper class="mat-elevation-z4" [linear]="true">
+
+                <mat-step [stepControl]="form1">
+            
+                    <form fxLayout="column" [formGroup]="form1">
+            
+                        <ng-template matStepLabel>FundDetails</ng-template>
+            
+                        <div fxFlex="1 0 auto" fxLayout="column">
+            
+                            <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Id</mat-label>
+                                                        <input matInput formControlName="id" required>
+                                                        <mat-error>Id is required!</mat-error>
+                                        </mat-form-field>
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Category_button_text</mat-label>
+                                                        <input matInput formControlName="category_button_text" required>
+                                                        <mat-error>category_button_text is required!</mat-error>
+                                        </mat-form-field>
+                                    
+                                         <mat-form-field  fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Category_title</mat-label>
+                                                        <input matInput formControlName="category_title" required>
+                                                        <mat-error>category_title is required!</mat-error>
+                                        </mat-form-field>
+                            </div>
+                            <div fxLayoutGap="10px">
+                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                <mat-label>ACTIONS</mat-label>
+                                                <input  matInput formControlName="ACTIONS" required>
+                                                <mat-error>ACTIONS is required!</mat-error>
+                                </mat-form-field>
+                            
+                                 <mat-form-field  fxFlex="50" appearance="outline" fxFlex="100">
+                                                <mat-label>DIVERSIFIES</mat-label>
+                                                <input  matInput formControlName="DIVERSIFIES" required>
+                                                <mat-error>DIVERSIFIES is required!</mat-error>
+                                </mat-form-field>
+                    </div>
+                    <div fxLayoutGap="10px">
+                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                        <mat-label>GESTION</mat-label>
+                                        <input  matInput formControlName="GESTIONALTERNATIVE" required>
+                                        <mat-error>GESTION ALTERNATIVE is required!</mat-error>
+                        </mat-form-field>
+                    
+                         <mat-form-field  fxFlex="50" appearance="outline" fxFlex="100">
+                                        <mat-label>IMMOBILIER DIRECT  </mat-label>
+                                        <input  matInput formControlName="IMMOBILIERDIRECT" required>
+                                        <mat-error>IMMOBILIER DIRECT is required!</mat-error>
+                        </mat-form-field>
+            </div>
+            <div fxLayoutGap="10px">
+                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                <mat-label>OBLIGATIONS</mat-label>
+                                <input  matInput formControlName="OBLIGATIONS" required>
+                                <mat-error>OBLIGATIONS is required!</mat-error>
+                </mat-form-field>
+            
+                 <mat-form-field  fxFlex="50" appearance="outline" fxFlex="100">
+                                <mat-label>no_gestion_society_text      </mat-label>
+                                <input  matInput formControlName="no_gestion_society_text" required>
+                                <mat-error>no_gestion_society_text is required!</mat-error>
+                </mat-form-field>
+    </div>
+                            <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Div_flexible_text</mat-label>
+                                                        <input matInput formControlName="div_flexible_text" required>
+                                                        <mat-error>div_flexible_text is required!</mat-error>
+                                                </mat-form-field>
+                    
+                                         <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Explain_note_content</mat-label>
+                                                        <input matInput formControlName="explain_note_content" required>
+                                                        <mat-error>explain_note_content is required!</mat-error>
+                                       </mat-form-field>
+                           </div>
+                           <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Explain_note_text</mat-label>
+                                                       <input matInput formControlName="explain_note_text" required>
+                                                        <mat-error>explain_note_text is required!</mat-error>
+                                                </mat-form-field>
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                       <mat-label>Follow_button_text</mat-label>
+                                                      <input matInput formControlName="follow_button_text" required>
+                                                       <mat-error>follow_button_text is required!</mat-error>
+                                        </mat-form-field>
+                            </div>
+                           <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Frais_gestion_detail_text</mat-label>
+                                                       <input matInput formControlName="frais_gestion_detail_text" required>
+                                                        <mat-error>frais_gestion_detail_text is required!</mat-error>
+                                                </mat-form-field>
+                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Frais_gestion_popup_text</mat-label>
+                                                       <input matInput formControlName="frais_gestion_popup_text" required>
+                                                        <mat-error>frais_gestion_popup_text is required!</mat-error>
+                                        </mat-form-field>
+                           </div>
+                           <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>frais_gestion_title</mat-label>
+                                                       <input matInput formControlName="frais_gestion_title" required>
+                                                        <mat-error>frais_gestion_title is required!</mat-error>
+                                                </mat-form-field>
+                    
+                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Isin_text</mat-label>
+                                                       <input matInput formControlName="isin_text" required>
+                                                        <mat-error>isin_text is required!</mat-error>
+                                                </mat-form-field>
+                           </div>
+                           <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Label_isr_detail_title</mat-label>
+                                                       <input matInput formControlName="label_isr_detail_title" required>
+                                                        <mat-error>label_isr_detail_title is required!</mat-error>
+                                                </mat-form-field>
+                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Label_isr_popup_text</mat-label>
+                                                       <input matInput formControlName="label_isr_popup_text" required>
+                                                        <mat-error>label_isr_popup_text is required!</mat-error>
+                                                </mat-form-field>
+                           </div>
+                           <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Label_isr_text</mat-label>
+                                                       <input matInput formControlName="label_isr_text" required>
+                                                        <mat-error>label_isr_text is required!</mat-error>
+                                        </mat-form-field>
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Perf_title</mat-label>
+                                                       <input matInput formControlName="perf_title" required>
+                                                        <mat-error>perf_title is required!</mat-error>
+                                        </mat-form-field>
+                           </div>
+                           <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Risk_indice_detail_popup_text</mat-label>
+                                                       <input matInput formControlName="risk_indice_detail_popup_text" required>
+                                                        <mat-error>risk_indice_detail_popup_text is required!</mat-error>
+                                                </mat-form-field>
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Risk_indice_detail_text</mat-label>
+                                                       <input matInput formControlName="risk_indice_detail_text" required>
+                                                        <mat-error>risk_indice_detail_text is required!</mat-error>
+                                        </mat-form-field>
+                            </div>
+                            <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Risk_indice_high_text</mat-label>
+                                                       <input matInput formControlName="risk_indice_high_text" required>
+                                                        <mat-error>risk_indice_high_text is required!</mat-error>
+                                                </mat-form-field>
+                                                <mat-form-field  fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Risk_indice_low_text</mat-label>
+                                                       <input matInput formControlName="risk_indice_low_text" required>
+                                                        <mat-error>risk_indice_low_text is required!</mat-error>
+                                                </mat-form-field>
+                           </div>
+                           <div fxLayoutGap="10px">
+                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Risk_indice_subtitle</mat-label>
+                                                       <input matInput formControlName="risk_indice_subtitle" required>
+                                                        <mat-error>risk_indice_subtitle is required!</mat-error>
+                                                </mat-form-field>
+                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                        <mat-label>Risk_indice_title</mat-label>
+                                                       <input matInput formControlName="risk_indice_title" required>
+                                                        <mat-error>risk_indice_title is required!</mat-error>
+                                                </mat-form-field>
+                           </div>
+                            <mat-form-field appearance="outline" fxFlex="100">
+                                    <mat-label>Unfollow_button_text</mat-label>
+                                   <input matInput formControlName="unfollow_button_text" required>
+                                    <mat-error>unfollow_button_text is required!</mat-error>
+                            </mat-form-field>
+
+                        </div>
+            
+                        <div fxLayout="row" fxLayoutAlign="center center">
+                            <button mat-raised-button matStepperNext type="button" style="background-color:  rgb(255, 195, 76) !important;">
+                                Next
+                            </button>
+                        </div>
+            
+                    </form>
+            
+                </mat-step>
+            
+                <mat-step [stepControl]="form2">
+                                <form fxLayout="column" [formGroup]="form2">
+            
+                                                <ng-template matStepLabel>Home</ng-template>
+                                    
+                                                <div fxFlex="1 0 auto" fxLayout="column">
+                                    
+                                                    <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Button_text_nl_1</mat-label>
+                                                                                <input matInput formControlName="button_text_nl_1" required>
+                                                                                <mat-error>button_text_nl_1 is required!</mat-error>
+                                                                </mat-form-field>
+                                                            
+                                                                 <mat-form-field  fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Canary_what_content</mat-label>
+                                                                                <input matInput formControlName="canary_what_content" required>
+                                                                                <mat-error>canary_what_content is required!</mat-error>
+                                                                </mat-form-field>
+                                                    </div>
+                                                    <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Canary_what_title</mat-label>
+                                                                                <input matInput formControlName="canary_what_title" required>
+                                                                                <mat-error>canary_what_title is required!</mat-error>
+                                                                        </mat-form-field>
+                                            
+                                                                 <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Footer_text_1</mat-label>
+                                                                                <input matInput formControlName="footer_text_1" required>
+                                                                                <mat-error>footer_text_1 is required!</mat-error>
+                                                               </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Footer_text_2</mat-label>
+                                                                               <input matInput formControlName="footer_text_2" required>
+                                                                                <mat-error>footer_text_2 is required!</mat-error>
+                                                                        </mat-form-field>
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                               <mat-label>Footer_text_3</mat-label>
+                                                                              <input matInput formControlName="footer_text_3" required>
+                                                                               <mat-error>footer_text_3 is required!</mat-error>
+                                                                </mat-form-field>
+                                                    </div>
+                                                   <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>How_work_canary_content</mat-label>
+                                                                               <input matInput formControlName="how_work_canary_content" required>
+                                                                                <mat-error>how_work_canary_content is required!</mat-error>
+                                                                        </mat-form-field>
+                                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>How_work_canary_title</mat-label>
+                                                                               <input matInput formControlName="how_work_canary_title" required>
+                                                                                <mat-error>how_work_canary_title is required!</mat-error>
+                                                                </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>How_work_test_text</mat-label>
+                                                                               <input matInput formControlName="how_work_test_text" required>
+                                                                                <mat-error>how_work_test_text is required!</mat-error>
+                                                                        </mat-form-field>
+                                            
+                                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Nl2_button</mat-label>
+                                                                               <input matInput formControlName="nl2_button" required>
+                                                                                <mat-error>nl2_button is required!</mat-error>
+                                                                        </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>Nl2_placeholer</mat-label>
+                                                                       <input matInput formControlName="nl2_placeholer" required>
+                                                                        <mat-error>nl2_placeholer is required!</mat-error>
+                                                                </mat-form-field>
+                                    
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>Nl_1_content</mat-label>
+                                                                       <input matInput formControlName="nl_1_content" required>
+                                                                        <mat-error>nl_1_content is required!</mat-error>
+                                                                </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>Nl_2_content</mat-label>
+                                                                       <input matInput formControlName="nl_2_content" required>
+                                                                        <mat-error>nl_2_content is required!</mat-error>
+                                                                </mat-form-field>
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>Palmares_button_text</mat-label>
+                                                                       <input matInput formControlName="palmares_button_text" required>
+                                                                        <mat-error>palmares_button_text is required!</mat-error>
+                                                                </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Palmares_title</mat-label>
+                                                               <input matInput formControlName="palmares_title" required>
+                                                                <mat-error>palmares_title is required!</mat-error>
+                                                        </mat-form-field>
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Search_form_footer</mat-label>
+                                                               <input matInput formControlName="search_form_footer" required>
+                                                                <mat-error>search_form_footer is required!</mat-error>
+                                                        </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px"> 
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Search_form_placeholder</mat-label>
+                                                               <input matInput formControlName="search_form_placeholder" required>
+                                                                <mat-error>search_form_placeholder is required!</mat-error>
+                                                        </mat-form-field>
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Search_form_title</mat-label>
+                                                               <input matInput formControlName="search_form_title" required>
+                                                                <mat-error>search_form_title is required!</mat-error>
+                                                        </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Text_bad_example</mat-label>
+                                                               <input matInput formControlName="text_bad_example" required>
+                                                                <mat-error>text_bad_example is required!</mat-error>
+                                                        </mat-form-field>
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Text_good_example</mat-label>
+                                                               <input matInput formControlName="text_good_example" required>
+                                                                <mat-error>text_good_example is required!</mat-error>
+                                                        </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Text_medium_example</mat-label>
+                                                               <input matInput formControlName="text_medium_example" required>
+                                                                <mat-error>text_medium_example is required!</mat-error>
+                                                        </mat-form-field>
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Text_very_bad_example</mat-label>
+                                                               <input matInput formControlName="text_very_bad_example" required>
+                                                                <mat-error>text_very_bad_example is required!</mat-error>
+                                                        </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Text_very_good_example</mat-label>
+                                                               <input matInput formControlName="text_very_good_example" required>
+                                                                <mat-error>text_very_good_example is required!</mat-error>
+                                                        </mat-form-field>
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Why_canary_content</mat-label>
+                                                               <input matInput formControlName="why_canary_content" required>
+                                                                <mat-error>why_canary_content is required!</mat-error>
+                                                        </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field  appearance="outline" fxFlex="100">
+                                                                <mat-label>Why_canary_title</mat-label>
+                                                               <input matInput formControlName="why_canary_title" required>
+                                                                <mat-error>why_canary_title is required!</mat-error>
+                                                        </mat-form-field>
+                                                       
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field appearance="outline" fxFlex="100">
+                                                                <mat-label>why_canary_repeater_text</mat-label>
+                                                               <textarea matInput formControlName="why_canary_repeater_text" required></textarea>
+                                                                <mat-error>why_canary_repeater_text is required!</mat-error>
+                                                        </mat-form-field>
+                                                  </div>
+                                                  <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>baseline_logo</mat-label>
+                                                               <input matInput formControlName="baseline_logo" required>
+                                                                <mat-error>baseline_logo is required!</mat-error>
+                                                        </mat-form-field>
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>search_form_baseline</mat-label>
+                                                               <input matInput formControlName="search_form_baseline" required>
+                                                                <mat-error>search_form_baseline is required!</mat-error>
+                                                        </mat-form-field>
+                                                   </div>
+
+                                                   <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>tip_title</mat-label>
+                                                               <input matInput formControlName="tip_title" required>
+                                                                <mat-error>tip_title is required!</mat-error>
+                                                        </mat-form-field>
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>tip_text</mat-label>
+                                                               <input matInput formControlName="tip_text" required>
+                                                                <mat-error>tip_text is required!</mat-error>
+                                                        </mat-form-field>
+                                                   </div>
+                                                   <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>canary_mission_titre</mat-label>
+                                                                       <input matInput formControlName="canary_mission_titre" required>
+                                                                        <mat-error>canary_mission_titre is required!</mat-error>
+                                                                </mat-form-field>
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>canary_mission_text</mat-label>
+                                                                       <input matInput formControlName="canary_mission_text" required>
+                                                                        <mat-error>canary_mission_text is required!</mat-error>
+                                                                </mat-form-field>
+                                                           </div>
+                                                
+                                                           <div fxLayoutGap="10px">
+                                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>le_canary_score_titre</mat-label>
+                                                                               <input matInput formControlName="le_canary_score_titre" required>
+                                                                                <mat-error>le_canary_score_titre is required!</mat-error>
+                                                                        </mat-form-field>
+                                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>le_canary_score_text</mat-label>
+                                                                               <input matInput formControlName="le_canary_score_text" required>
+                                                                                <mat-error>le_canary_score_text is required!</mat-error>
+                                                                        </mat-form-field>
+                                                                   </div>
+                                                                   
+                                                   <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>ma_premiere_recherche_titre</mat-label>
+                                                                       <input matInput formControlName="ma_premiere_recherche_titre" required>
+                                                                        <mat-error>ma_premiere_recherche_titre is required!</mat-error>
+                                                                </mat-form-field>
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>ma_premiere_recherche_text</mat-label>
+                                                                       <input matInput formControlName="ma_premiere_recherche_text" required>
+                                                                        <mat-error>ma_premiere_recherche_text is required!</mat-error>
+                                                                </mat-form-field>
+                                                           </div>
+                                                   
+                                                </div>
+                                                <div fxLayout="row" fxLayoutAlign="center center">
+                                                        <button mat-raised-button matStepperNext type="button" style="background-color:  rgb(255, 195, 76) !important;">
+                                                            Next
+                                                        </button>
+                                                    </div>
+                                               
+                                    
+                                            </form>
+                   
+                </mat-step>
+                <mat-step [stepControl]="form3">
+                        <form fxLayout="column" [formGroup]="form3">
+    
+                                        <ng-template matStepLabel>Footer</ng-template>
+                            
+                                        <div fxFlex="1 0 auto" fxLayout="column">
+                                                        <div fxLayoutGap="10px">
+                                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Qui sommes nous Titre</mat-label>
+                                                                               <input matInput formControlName="QuisommesnousTitre" required>
+                                                                                <mat-error>Qui sommes nous Titre is required!</mat-error>
+                                                                        </mat-form-field>
+                                                                        
+                                                        </div>
+                                                 <div fxLayoutGap="10px">
+                                                                <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                        <mat-label>Qui sommes nous</mat-label>
+                                                                       <textarea matInput formControlName="Quisommesnous" required rows=""></textarea>
+                                                                        <mat-error>Qui sommes nous is required!</mat-error>
+                                                                </mat-form-field>
+                                                                
+                                                           </div>
+                                                           <div fxLayoutGap="10px">
+                                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                             <mat-label>Fondation Canary Titre</mat-label>
+                                                                            <input matInput formControlName="FondationCanaryTitre">
+                                                                             <mat-error>Fondation Canary Titre is required!</mat-error>
+                                                                     </mat-form-field>
+                                                            </div>
+                                                           <div fxLayoutGap="10px">
+                                                           <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Fondation Canary</mat-label>
+                                                               <textarea matInput formControlName="FondationCanary" rows="5" required></textarea>
+                                                                <mat-error>Fondation Canary is required!</mat-error>
+                                                        </mat-form-field>
+                                                           </div>
+                                                           
+                                                           <div fxLayoutGap="10px">
+                                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                                <mat-label>Mentions légales</mat-label>
+                                                                               <input matInput formControlName="MentionslegalesTitre">
+                                                                                <mat-error>Mentions légales is required!</mat-error>
+                                                                        </mat-form-field>
+                                                                       
+                                                                   </div>
+                                           <div fxLayoutGap="10px">
+                                                        <mat-form-field fxFlex="50" appearance="outline" fxFlex="100">
+                                                                <mat-label>Mentions légales</mat-label>
+                                                               <textarea matInput formControlName="Mentionslegales" rows="5" required></textarea>
+                                                                <mat-error>Mentions légales is required!</mat-error>
+                                                        </mat-form-field>
+                                                       
+                                                   </div>
+                                           
+                                        </div>
+                            
+                                        <div fxLayout="row" fxLayoutAlign="center center">
+                                            <button mat-raised-button matStepperNext type="button" style="background-color:  rgb(255, 195, 76) !important;" (click)="ajouter()">
+                                                Submit
+                                            </button>
+                                        </div>
+                            
+                                    </form>
+           
+        </mat-step>
+            
+            </mat-horizontal-stepper>
+</div>

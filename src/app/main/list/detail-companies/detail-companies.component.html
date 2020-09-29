@@ -1,0 +1,191 @@
+<div id="order" class="page-layout carded fullwidth inner-scroll">
+
+  <!-- TOP BACKGROUND -->
+  <div class="top-bg amber"></div>
+  <!-- / TOP BACKGROUND -->
+
+  <div class="center">
+
+      <!-- HEADER -->
+      <div class="header amber"
+           fxLayout="row" fxLayoutAlign="space-between center">
+
+          <!-- APP TITLE -->
+          <div fxLayout="row" fxLayoutAlign="start center">
+
+              <button mat-icon-button class="mr-16" [routerLink]="'/dashbord'">
+                  <mat-icon>arrow_back</mat-icon>
+              </button>
+
+              <div fxLayout="column" fxLayoutAlign="start start"
+                   [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                  <div class="h1">
+                      {{detail?.name}}
+                  </div> 
+              </div>
+          </div>
+          <!-- / APP TITLE -->
+      </div>
+      <!-- / HEADER -->
+
+    <div class="content-card">
+ 
+          <div class="contentb">                               
+                    <div class="tab-contentb p-24" fusePerfectScrollbar>
+                           
+                        <form >
+  
+                                  
+                                <div fxLayout="column" fxLayoutGap="10px">
+                                    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px"  fxFlex="100">
+
+                                            <div class="fuse-card "  fxFlex="50">
+
+                                                    <div class="p-16">
+                                                        <div class="h5 secondary-text">Name</div>
+                                                        <div class="h3">{{detail?.name}}</div>
+                                                    </div>
+                                              </div>
+                                                  <div class="fuse-card "  fxFlex="50">
+
+                                                        <div class="p-16">
+                                                            <div class="h5 secondary-text">Generic_name</div>
+                                                            <div class="h3">{{detail?.generic_name}}</div>
+                                                        </div>
+                                                  </div>
+                                                 
+                                                   
+                                    </div>    
+
+                                   <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40">  
+                                                <div class="fuse-card "  fxFlex="50">
+
+                                                        <div class="p-16">
+                                                            <div class="h5 secondary-text">description</div>
+                                                            <div class="h3">{{detail?.description}}</div>
+                                                        </div>
+                                                  </div>
+                                                
+                                                  <div class="fuse-card "  fxFlex="50">
+
+                                                        <div class="p-16">
+                                                            <div class="h5 secondary-text">Nationality</div>
+                                                            <div class="h3">{{detail?.nationality}}</div>
+                                                        </div>
+                                                  </div>
+                                                       
+                                </div> 
+                                                
+                                            
+                 
+                                    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                    
+                                          <div class="fuse-card "  fxFlex="50">
+
+                                                <div class="p-16">
+                                                    <div class="h5 secondary-text">parity</div>
+                                                    <div class="h3">{{detail?.parity}}</div>
+                                                </div>
+                                          </div>
+                                          <div class="fuse-card "  fxFlex="50">
+
+                                                <div class="p-16">
+                                                    <div class="h5 secondary-text">round_decimal</div>
+                                                    <div class="h3">{{detail?.round_decimal}}</div>
+                                                </div>
+                                          </div>
+
+                                         
+                                    </div>  
+                                      
+                                    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                        
+                                          <div class="fuse-card "  fxFlex="50">
+
+                                                <div class="p-16">
+                                                    <div class="h5 secondary-text">sgp_desc</div>
+                                                    <div class="h3">{{detail?.sgp_desc}}</div>
+                                                </div>
+                                          </div>
+                                          <div class="fuse-card "  fxFlex="50">
+
+                                                <div class="p-16">
+                                                    <div class="h5 secondary-text">Unit</div>
+                                                    <div class="h3">{{detail?.unit}}</div>
+                                                </div>
+                                          </div>
+                                           
+                                          
+                                    </div>  
+                                    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                        
+                                        <div class="fuse-card "  fxFlex="50">
+
+                                              <div class="p-16">
+                                                  <div class="h5 secondary-text">Currency_aum</div>
+                                                  <div class="h3">{{detail?.currency_aum}}</div>
+                                              </div>
+                                        </div>
+                                        <div class="fuse-card "  fxFlex="50">
+
+                                              <div class="p-16">
+                                                  <div class="h5 secondary-text">creation_year</div>
+                                                  <div class="h3">{{detail?.creation_year}}</div>
+                                              </div>
+                                        </div>
+                                         
+                                        
+                                  </div>  
+                                  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                        
+                                      <div class="fuse-card "  fxFlex="50">
+
+                                            <div class="p-16">
+                                                <div class="h5 secondary-text">Aum_source</div>
+                                                <div class="h3">{{detail?.aum_source}}</div>
+                                            </div>
+                                      </div>
+                                      <div class="fuse-card "  fxFlex="50">
+
+                                            <div class="p-16">
+                                                <div class="h5 secondary-text">aum_cons_eur</div>
+                                                <div class="h3">{{detail?.aum_cons_eur}}</div>
+                                            </div>
+                                      </div>
+                                       
+                                      
+                                </div>  
+                                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" fxFlex="40"> 
+                                        
+                                    <div class="fuse-card "  fxFlex="50">
+
+                                          <div class="p-16">
+                                              <div class="h5 secondary-text">Aum_cd</div>
+                                              <div class="h3">{{detail?.aum_cd}}</div>
+                                          </div>
+                                    </div>
+                                    <div class="fuse-card "  fxFlex="50">
+
+                                            <div class="p-16">
+                                                <div class="h5 secondary-text">alt_names</div>
+                                                <div class="h3">{{detail?.alt_names}}</div>
+                                            </div>
+                                    </div>
+                                    
+                              </div>  
+                                </div>  
+                         
+     
+                        </form>
+
+ 
+                    </div>
+
+                  
+
+          </div>
+
+      </div> 
+
+  </div>
+</div>

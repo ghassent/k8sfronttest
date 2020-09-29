@@ -1,0 +1,58 @@
+<div id="productslis2" class="page-layout carded fullwidth inner-scroll" >
+
+    <!-- HEADER -->
+    <!-- TOP BACKGROUND -->
+    <div class="top-bg" style="background-color:  rgb(255, 195, 76) !important;"></div>
+    
+    <!-- / TOP BACKGROUND -->
+  
+    <!-- CENTER -->
+    <div class="center">
+  
+      <!-- HEADER -->
+      <div class="header" style="background-color:  rgb(255, 195, 76) !important;" fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-sm="row"
+        fxLayoutAlign.gt-sm="space-between center">
+        <div fxLayout="row" fxLayoutAlign="start center">
+  
+            <button mat-icon-button class="mr-16" [routerLink]="'/dashbord'">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+
+            <div fxLayout="column" fxLayoutAlign="start start"
+                 [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                <div class="h1">
+                    language
+                </div> 
+            </div>
+            
+       </div>
+       <button mat-raised-button class="add-product-button fuse-white mt-24 mt-md-0" (click)="onCreate()">
+          <span>ADD </span>
+        </button>
+  
+      </div>
+      <br>
+      <div class="content-card" fxLayout="row wrap" fxFlex="100"  fxLayoutGap="10px" fxlayoutalign="center center" >
+          <div *ngFor="let row of tab" class=" variable-width" fxFlex="55" id="margin" fxFlex.gt-xs="50" fxFlex.gt-sm="33" >
+
+              <div class="position-relative ng-tns-c39-30 ng-star-inserted" id="margintop" fxlayoutalign="center center" >
+                <img class="ng-tns-c39-30" fxlayoutalign="center center" id="image" src="https://flagpedia.net/data/flags/w580/{{row}}.png">
+              </div>
+
+             <div  class="px-16 py-4" fxlayout="row"  fxlayoutalign="center center">
+                <button  
+                 class="ng-tns-c39-30 mat-icon-button" 
+                 fxlayout="row" 
+                 fxFlex
+                routerLink="/listLangue/{{row}}">
+                    <span class="mat-button-wrapper" >
+                       <mat-icon class="mat-icon ng-tns-c39-30 material-icons mat-icon-no-color" >edit</mat-icon>
+                    </span>
+            </button>
+             </div>
+          </div> 
+      </div>
+     
+    </div>
+   
+  </div>

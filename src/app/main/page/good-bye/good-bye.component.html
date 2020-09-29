@@ -1,0 +1,32 @@
+<div id="lock" fxLayout="column">
+
+  <div id="lock-form-wrapper" fxLayout="column" fxLayoutAlign="center center">
+
+      <div id="lock-form" [@animate]="{value:'*',params:{duration:'300ms',y:'100px'}}">
+
+          <div class="lock-form-header" fxLayout="column" fxLayoutAlign="center center"
+               fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="start center">
+
+              <div class="avatar-container">
+                  <img class="avatar big" src="assets/images/logo.png"> 
+              </div>
+
+              <div>
+                  <div class="title">Good Bye</div>
+                  <div class="subtitle">
+                      See you soon
+                  </div>
+              </div>
+
+          </div>
+ 
+
+          <div class="message">
+              <a class="link" [routerLink]="'/login'">want to Login again ?</a>
+          </div>
+
+      </div>
+
+  </div>
+
+</div>

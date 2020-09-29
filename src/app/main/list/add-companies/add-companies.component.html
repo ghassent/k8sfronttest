@@ -1,0 +1,72 @@
+<div class="dialog-content-wrapper">
+  <mat-toolbar class="amber m-0" fxLayout="column">
+      <mat-toolbar-row fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+          <span class="title dialog-title" fxLayoutAlign="center center" >Add Companies</span>
+          <button mat-icon-button (click)="onClose()" aria-label="Close dialog">
+              <mat-icon>close</mat-icon>
+          </button>
+      </mat-toolbar-row>
+  </mat-toolbar>
+  <form [formGroup]="form" >
+  <div class="p-16 pb-0 m-0"  fxLayout="column" >
+          <div fxLayout="row" fxLayoutAlign="start start"  fxFlex="100">
+            <mat-form-field appearance="outline" fxFlex>
+                <mat-label>Id</mat-label>
+                <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+                <input name="name"  formControlName="id" matInput required>
+                <mat-error>This field is mandatory.</mat-error>
+            </mat-form-field>
+        </div>
+      <div fxLayout="row" fxFlex  fxLayoutGap="10px"> 
+        <div fxLayout="row" fxLayoutAlign="start start"  fxFlex="50">
+          <mat-form-field appearance="outline" fxFlex>
+              <mat-label>name</mat-label>
+              <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+              <input name="name"  formControlName="name" matInput required>
+              <mat-error>This field is mandatory.</mat-error>
+          </mat-form-field>
+      </div>
+      <div fxLayout="row"  fxLayoutAlign="start start" fxFlex="50">
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>generic_name</mat-label>
+            <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+            <input name="name"   formControlName="generic_name" matInput required>
+            <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+    </div>
+      </div>
+    <div fxLayout="row" fxFlex  fxLayoutGap="10px"> 
+      <div fxLayout="row"  fxLayoutAlign="start start" fxFlex="50">
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>description</mat-label>
+            <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+            <input name="name"  formControlName="description" matInput required>
+            <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+    </div>
+  <div fxLayout="row"  fxLayoutAlign="start start" fxFlex="50">
+    <mat-form-field appearance="outline" fxFlex>
+        <mat-label>nationality</mat-label>
+        <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+        <input name="name"  formControlName="nationality" matInput required>
+        <mat-error>This field is mandatory.</mat-error>
+    </mat-form-field>
+</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start start"  fxFlex="100">
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Alt_names</mat-label>
+            <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+            <input name="name"  formControlName="alt_names" matInput required>
+            <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+    </div>
+   
+  </div>
+ 
+  <div mat-dialog-actions class="m-0 p-16" fxLayout="row" fxLayoutAlign="end center">
+    <button mat-button style="color:rgb(255, 195, 76)" (click)="submit()"  >Proceed</button>
+    <button mat-button (click)="onClose()" >Cancel</button>
+  </div> 
+</form>
+</div>

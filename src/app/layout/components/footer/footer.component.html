@@ -1,0 +1,19 @@
+<mat-toolbar>
+
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.gt-xs="space-between center" fxFlex>
+
+        <a [routerLink]="'/QuiSommeNous'"
+            fxFlex="0 0 auto" fxLayout="row" style="color: rgb(255, 195, 76) !important;"
+           fxLayoutAlign="start center">
+            <span> Qui sommes-nous ?</span>
+        </a>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxHide fxShow.gt-xs>
+            <a mat-button style="color: rgb(255, 195, 76) !important;" (click)="Popup()">Fondation Canary</a>
+            <span>&bull;</span>
+            <a mat-button style="color: rgb(255, 195, 76) !important;" routerLink="/app-mentionslegale">Mentions légales</a>
+        </div>
+
+    </div>
+
+</mat-toolbar>
